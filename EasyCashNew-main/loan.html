@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/newStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/slick.min.js" defer></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="scripts/calc.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <main class="wrapper">
+        <div class="flex__content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="burger__menu">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <rect width="13" height="1" fill="#333333" stroke="#333333" stroke-width="0.2" />
+                                    <rect x="5" y="6" width="8" height="1" fill="#333333" stroke="#333333"
+                                        stroke-width="0.2" />
+                                    <rect y="12" width="13" height="1" fill="#333333" stroke="#333333"
+                                        stroke-width="0.2" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="13" height="13" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="header__left">
+                            <div class="header__menu">
+                                <nav class="menu">
+                                    <ul class="menu__list">
+                                        <li class="menu__list-item">
+                                            <a id="about" class="menu__list-link" href="#">
+                                                О нас
+                                            </a>
+                                        </li>
+                                        <li class="menu__list-item">
+                                            <a class="menu__list-link" href="#">
+                                                Получить
+                                            </a>
+                                        </li>
+                                        <li class="menu__list-item">
+                                            <a class="menu__list-link" href="#">
+                                                Акции
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="account__language">
+                                <div class="account__language-item">ua</div>
+                                <div class="account__language-item active">ru</div>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <a href="#">
+                                <img src="images/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="header__account">
+                            <a href="#" class="account btn  btn-blue">
+                                Погасить
+                            </a>
+                            <a href="#" class="account btn  btn-transparent btn-transparent--blue">
+                                Личный кабинет
+                            </a>
+                        </div>
+                        <div class="header__account-phone">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 15V13.3333C14 12.4493 13.6839 11.6014 13.1213 10.9763C12.5587 10.3512 11.7956 10 11 10H5C4.20435 10 3.44129 10.3512 2.87868 10.9763C2.31607 11.6014 2 12.4493 2 13.3333V15"
+                                    stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
+                                    stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mainMenu">
+
+                    <div class="mainMenu__inner">
+                        <div class="mainMenu__inner-menu">
+                            <nav class="mainMenu__menu">
+                                <ul class="mainMenu__list">
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Акции
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Вопросы и ответы
+                                        </a>
+                                    </li>
+                                    <li class="mainMenu__list-item">
+                                        <a href="#" class="mainMenu__list-link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="mainMenu__inner-lang">
+                            <div class="account__language-item">ua</div>
+                            <div class="account__language-item active">ru</div>
+                        </div>
+                        <div class="header__support header__support_mobile">
+                            <div class="header__support-label">
+                                Поддержка:
+                            </div>
+                            <div class="header__support-phones">
+                                <a href="tel:380633163030">+38 (063) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (067) 316-30-30</a>
+                                <a href="tel:380633163030">+38 (066) 316-30-30</a>
+                            </div>
+                        </div>
+                        <div class="mainMenu__inner-btns">
+                            <a href="#" class="mainMenu__inner-btn btn btn-blue">Погасить</a>
+                            <a href="#" class="mainMenu__inner-btn btn btn-transparent">Личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="loan__link">
+                <a href="#">Погасить кредит</a>
+            </section>
+            <section class="registration__phone">
+                <div class="container">
+                    <div class="registration__phone-inner">
+                        <div class="registration__phone-info">
+                            <div class="registration__phone-text">Для погашения задолжености по кредиту введите ваш
+                                номер
+                                телефона, указанный при регистрации</div>
+                            <div class="registration__phone-inp">
+                                <label>Телефон<span>*</span></label>
+                                <input type="phone">
+                            </div>
+                            <div class="registration__phone-btns">
+                                <button type="button" class="btn get__code btn--red" href="#">Получить код</button>
+                                <div class="register-btn">
+                                    <a class="register__enter" href="#">Войти в кабинет</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-up">
+                        <div class="footer__wrapper-left">
+                            <div class="footer__left-content">
+                                <div class="footer__left-title">
+                                    <a id="about-link" href="#">О компании</a>
+                                </div>
+                                <div class="footer__left-links footer__left-about">
+                                    <ul>
+                                        <li>
+                                            <a href="">Правовая информация</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Кредитный договор</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Подтверждение</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Паспорт кредита</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Публичное предложение</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Согласие на обработку персональных данных</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Политика конфиденциальности</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__left-content">
+                                <div class="footer__left-title">
+                                    <a id="useful-link" href="#">Полезные ссылки</a>
+                                </div>
+                                <div class="footer__left-links footer__left-useful">
+                                    <ul>
+                                        <li>
+                                            <a href="">Акции</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Вопросы и ответы</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Новости</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__wrapper-right">
+                            <div class="footer__right-support">
+                                <div class="support__title">Служба поддержки</div>
+                                <div class="support__phone">
+                                    <a href="#">+38 (044) 338-07-79</a>
+                                </div>
+                            </div>
+                            <div class="footer__right-time">Время работы: с 9:00 до 18:00 без перерыва и выходных</div>
+                        </div>
+                    </div>
+                    <div class="footer__wrapper-down">
+                        <div class="footer__wrapper-left">
+                            <div class="footer__copy">© 2020 “Easy Cash”. Все права защищены</div>
+                        </div>
+                        <div class="footer__wrapper-right">
+                            <div class="footer__social">
+                                <div class="footer__social-text">Мы в социальных сетях:</div>
+                                <div class="footer__social-ico">
+                                    <a href="#" class="social__icon">
+                                        <img src="images/instagram.svg" alt="">
+                                    </a>
+                                    <a href="#" class="social__icon">
+                                        <img src="images/facebook.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <div class="chatbot">
+        <div class="chatbot__messanger">
+            <div class="chatbot__messanger-item veber"><a href="#">
+                    Viber</a></div>
+            <div class="chatbot__messanger-item messenger"><a href="#">
+                    Messenger</a></div>
+            <div class="chatbot__messanger-item telegram"><a href="#">
+                    Telegram</a></div>
+        </div>
+        <img src="images/chatbot.png" alt="">
+    </div>
+</body>
+
+</html>
